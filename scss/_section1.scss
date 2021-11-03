@@ -1,0 +1,59 @@
+.section1 {
+    background-color: $yellow;
+    padding: 90px 0 80px;
+    .wrapper {
+        @include flex(space-between, center);
+    }
+    &__text {
+        flex: 0 0 650px;
+        @include mobile-and-tablet {
+            flex: 0 0 100%;
+        }
+    }
+    &__img-container {
+        flex: 0 0 calc(100% - 750px);
+        @include tablet {
+            flex: 0 0 300px;
+        }
+        @include mobile-and-tablet {
+            flex: 0 0 250px;
+            margin: 40px auto 0;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        width: 100%;
+    }
+    &__heading {
+        font-size: 67px;
+        font-weight: 600;
+        color: $white;
+        @include tablet {
+            font-size: 57px;
+        }
+        @include mobile {
+            font-size: 45px;
+            letter-spacing: 0;
+        }
+    }
+    &__content {
+        font-size: 29px;
+        color: $white;
+        margin: 50px 0;
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+    .btn-turquoise {
+        margin-right: 30px;
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .btn-transparent {
+        @include mobile {
+            display: none;
+        }
+    }
+}

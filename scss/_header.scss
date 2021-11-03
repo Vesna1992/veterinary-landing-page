@@ -1,0 +1,144 @@
+.header {
+    background-color: $orange;
+    padding: 30px 0;
+    @include mobile {
+        padding: 20px 0;
+    }
+    .wrapper {
+        @include flex(space-between, center);
+    }
+    &__logo {
+        @include tablet-and-small-laptop {
+            order: -1;
+        }
+        @include mobile {
+            width: 80%;
+        }
+    }
+    &__toggler {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    &__bar {
+        width: 35px;
+        height: 3px;
+        background-color: $turquoise;
+        display: block;
+        margin-bottom: 5px;
+        transition: $transiton;
+        &:first-child {
+            &.active {
+                transform: rotate(-45deg);
+            }
+        }
+        &:nth-child(2) {
+            &.active {
+               display: none;
+            }
+        }
+        &:nth-child(3) {
+            &.active {
+                transform: rotate(45deg);
+                position: relative;
+                bottom: 8px;
+            }     
+        }
+    }
+    &__nav {
+        @include tablet-and-small-laptop {
+            order: 2;
+            flex: 0 0 100%;
+            margin: 50px auto 0;
+        }
+        @include mobile {
+            opacity: 0;
+            height: 0;
+            transition: .8s cubic-bezier(0.075, 0.82, 0.265, 1);
+            &.active {
+                opacity: 1;
+                margin-top: 50px;
+                height: auto;
+            }
+        }
+    }
+    &__list {    
+        @include flex(space-between, center);
+        @media(min-width: 1024px) and (max-width: 1200px) {
+            padding: 0 20%;
+        }
+        @include tablet {
+           padding: 0 10%;
+        }
+    }
+    &__item {
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include mobile {
+            flex: 0 0 100%;
+            padding: 0 0 30px 50px;
+        }
+    }
+    &__link {
+        font-size: 29px;
+        font-weight: 500;
+        color: $white;   
+        position: relative;
+        &::after {
+            content: '';
+            background-color: $turquoise;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .2s ease-in;
+        } 
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        } 
+    }
+    &__form {
+        box-shadow: 7.512px 14.127px 14.94px 3.06px rgba(74, 74, 74, 0.1);
+        @include tablet-and-small-laptop {
+            order: 1;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__input {
+        width: 203px;
+        padding: 15px;
+        background-color: $yellow;
+        border: none;
+        outline: none;
+        font-size: 21px;
+        color: $white;
+        &::placeholder {
+            font-size: 21px;
+            color: $white;
+            letter-spacing: .5px;
+        }
+    }
+    &__button {
+        padding: 12px 25px;
+        background-color: $turquoise;
+        position: relative;
+        left: -3px;
+        &:hover {
+            background-color: darken($turquoise, 10%);
+        }
+    }
+    &__search-icon {
+        position: relative;
+        top: 5px;
+    }
+}
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <a href="index.html"><img src="img/logo.png" class="header__logo" alt="logo image"></a>
+            <button class="header__toggler">
+                <span class="header__bar"></span>
+                <span class="header__bar"></span>
+                <span class="header__bar"></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#about" class="header__link">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#services" class="header__link">Services</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="header__form">
+                <input type="search" class="header__input" placeholder="Search..">
+                <button type="submit" class="header__button"><img src="img/search-icon.png" class="header__search-icon" alt="search-icon"></button>
+            </form>
+        </div>
+    </header>
+    <div class="section1">
+        <div class="wrapper">
+            <article class="section1__text">
+                <h1 class="section1__heading">First I wanted to be a veterinarian</h1>
+                <p class="section1__content">Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</p>
+                <a href="#contact"><button class="btn-turquoise">Contact Us</button></a>
+                <button class="btn-transparent">Our Service</button>
+            </article>
+            <div class="section1__img-container">
+                <img src="img/section1-img.png" class="section1__img" alt="dog image">
+            </div>
+        </div>
+    </div>
+    <div class="section2" id="services">
+        <div class="wrapper">
+            <article class="section2__text">
+                <h2 class="section2__heading">As a veterinarian and lover of animals.</h2>
+                <p class="section2__content">Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+                <button class="btn-yellow">Our Service</button>
+            </article>
+            <div class="section2__img-side">
+                <div class="section2__img-container">
+                    <img src="img/video-icon.png" class="section2__icon" alt="video icon">  
+                </div>
+                <div class="section2__orange-block"></div>
+            </div>
+        </div>
+    </div>
+    <section class="section3" id="about">
+        <div class="wrapper">
+            <h2 class="section3__heading">About</h2>
+            <p class="section3__content">Lorem Ipsum available, but the majority have <br>suffered alteration in some form.</p>
+            <div class="section3__cols-container">
+                <article class="section3__col">
+                    <div class="section3__img-container">
+                        <img src="img/section3-img1.png" class="section3-img" alt="dog image">
+                    </div>
+                    <h3 class="section3__col-heading">Veterinarian</h3>
+                    <p class="section3__col-content">Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+                </article>
+                <article class="section3__col">
+                    <div class="section3__img-container">
+                        <img src="img/section3-img2.png" class="section3-img" alt="dog image">
+                    </div>
+                    <h3 class="section3__col-heading">Veterinarian</h3>
+                    <p class="section3__col-content">Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+                </article>
+                 <article class="section3__col">
+                    <div class="section3__img-container">
+                        <img src="img/section3-img3.png" class="section3-img" alt="dog image">
+                    </div>
+                    <h3 class="section3__col-heading">Veterinarian</h3>
+                    <p class="section3__col-content">Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div class="section4">
+        <div class="wrapper"> 
+            <div class="section4__img-side">
+                <div class="section4__img-container">
+                    <img src="img/video-icon.png" class="section4__icon" alt="video icon">   
+                </div>
+                <div class="section4__orange-block"></div>
+            </div>          
+            <article class="section4__text">
+                <h2 class="section4__heading">As a veterinarian and lover of animals.</h2>
+                <p class="section4__content">Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+                <button class="btn-yellow">Our Service</button>
+            </article>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="wrapper">
+            <h2 class="section5__heading">Shop</h2>
+            <p class="section5__content"> Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <div class="section5__cols-container">
+                <div class="section5__col">
+                    <div class="section5__img-container">
+                        <img src="img/section5-img1.png" class="section5__img" alt="dog image">
+                    </div>
+                    <div class="section5__price">
+                        <p class="section5__number">50$<span class="section5__line"></span></p>
+                        <p>30$</p>
+                    </div>
+                    <button class="btn-buy-now">Buy Now</button>
+                </div>
+                <div class="section5__col">
+                    <div class="section5__img-container">
+                        <img src="img/section5-img2.png" class="section5__img" alt="dog image">
+                    </div>
+                    <div class="section5__price">
+                        <p class="section5__number">$40<span class="section5__line"></span></p>
+                        <p>25$</p>
+                    </div>
+                    <button class="btn-buy-now">Buy Now</button>
+                </div>
+                <div class="section5__col">
+                    <div class="section5__img-container">
+                        <img src="img/section5-img3.png" class="section5__img" alt="dog image">
+                    </div>
+                    <div class="section5__price">
+                        <p class="section5__number">$45<span class="section5__line"></span></p>
+                        <p>20$</p>
+                    </div>
+                    <button class="btn-buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="team">
+        <div class="wrapper">
+             <h2 class="team__heading2">The vetcare team</h2>
+            <p class="team__content">Lorem Ipsum available, but the majority have <br>suffered alteration in some form.</p>
+            <div class="team__cols-container">
+                <article class="team__col">
+                    <img src="img/team1.png" class="team__img" alt="person image">
+                    <hgroup class="team__headings">
+                        <h3 class="team__heading3">Jennifer Mullen</h3>
+                        <h4 class="team__heading4">Veterinary</h4>
+                    </hgroup>
+                    <a href="https://www.instagram.com/" class="team__link" target="_blank"><i class="fab fa-instagram team__icon"></i></a>
+                    <a href="https://www.facebook.com/" class="team__link" target="_blank"><i class="fab fa-facebook-f team__icon"></i></a>
+                    <a href="https://www.twitter.com/" class="team__link" target="_blank"><i class="fab fa-twitter team__icon"></i></a>
+                    <a href="https://www.whatsapp.com/" class="team__link" target="_blank"><i class="fab fa-whatsapp team__icon"></i></a>
+                </article>
+                <article class="team__col">
+                    <img src="img/team2.png" class="team__img" alt="person image">
+                    <hgroup class="team__headings">
+                        <h3 class="team__heading3">Sheeren Collins</h3>
+                        <h4 class="team__heading4">Administration</h4>
+                    </hgroup>
+                    <a href="https://www.instagram.com/" class="team__link" target="_blank"><i class="fab fa-instagram team__icon"></i></a>
+                    <a href="https://www.facebook.com/" class="team__link" target="_blank"><i class="fab fa-facebook-f team__icon"></i></a>
+                    <a href="https://www.twitter.com/" class="team__link" target="_blank"><i class="fab fa-twitter team__icon"></i></a>
+                    <a href="https://www.whatsapp.com/" class="team__link" target="_blank"><i class="fab fa-whatsapp team__icon"></i></a>
+                </article>
+                <article class="team__col">
+                    <img src="img/team3.png" class="team__img" alt="person image">
+                    <hgroup class="team__headings">
+                        <h3 class="team__heading3">Jennifer Mullen</h3>
+                        <h4 class="team__heading4">Veterinary</h4>
+                    </hgroup>
+                    <a href="https://www.instagram.com/" class="team__link" target="_blank"><i class="fab fa-instagram team__icon"></i></a>
+                    <a href="https://www.facebook.com/" class="team__link" target="_blank"><i class="fab fa-facebook-f team__icon"></i></a>
+                    <a href="https://www.twitter.com/" class="team__link" target="_blank"><i class="fab fa-twitter team__icon"></i></a>
+                    <a href="https://www.whatsapp.com/" class="team__link" target="_blank"><i class="fab fa-whatsapp team__icon"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div class="counter">
+        <div class="wrapper">
+            <article class="counter__col">
+                <img src="img/counter-icon1.png" alt="icon">
+                <h4 data-target="34793" class="counter__heading4">&plus; <span>0</span></h4>
+                <h3 class="counter__heading3">Happy Clients</h3>
+            </article>
+            <article class="counter__col">
+                <img src="img/counter-icon2.png" alt="icon">
+                <h4 data-target="45382" class="counter__heading4">&plus; <span>0</span></h4>
+                <h3 class="counter__heading3">Department</h3>
+            </article>
+            <article class="counter__col">
+                <img src="img/counter-icon3.png" alt="icon">
+                <h4 data-target="54762" class="counter__heading4">&plus; <span>0</span></h4>
+                <h3 class="counter__heading3">Vaccinations</h3>
+            </article>
+        </div>
+    </div>
+    <section class="posts">
+        <div class="wrapper">
+            <h2 class="posts__heading">Recent Posts</h2>
+            <p class="posts__content"> Lorem Ipsum available, but the majority have <br>suffered alteration in some form.</p>
+            <div class="posts__posts-container">
+                <div class="posts__post">
+                    <img src="img/post1.png" class="posts__img" alt="dog image">
+                    <article class="posts__body">
+                        <h3 class="posts__heading3">As a veterinarian and lover of animals</h3>
+                        <p class="posts__date">February 09, 2020</p>
+                        <p class="posts__text">Lorem Ipsum available, but the majority have suffered alteration in some words which look.</p>
+                        <a href="#" class="posts__link">Read More+</a>
+                    </article>
+                </div>
+                <div class="posts__post">
+                    <img src="img/post2.png" class="posts__img" alt="dog image">
+                    <article class="posts__body">
+                        <h3 class="posts__heading3">As a veterinarian and lover of animals</h3>
+                        <p class="posts__date">February 10, 2020</p>
+                        <p class="posts__text">Lorem Ipsum available, but the majority have suffered alteration in some words which look.</p>
+                        <a href="#" class="posts__link">Read More+</a>
+                    </article>
+                </div>
+                <div class="posts__post">
+                    <img src="img/post3.png" class="posts__img" alt="dog image">
+                    <article class="posts__body">
+                        <h3 class="posts__heading3">As a veterinarian and lover of animals</h3>
+                        <p class="posts__date">February 11, 2020</p>
+                        <p class="posts__text">Lorem Ipsum available, but the majority have suffered alteration in some words which look.</p>
+                        <a href="#" class="posts__link">Read More+</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="wrapper">
+            <article class="footer__col">
+                <h3 class="footer__heading">About</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">History</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Our Team</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Brand Guidelines</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Terms&amp;Condition</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__col">
+                <h3 class="footer__heading">Services</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">How to Order</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Our Product</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Order Status</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Promo</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Payment Method</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__col">
+                <h3 class="footer__heading">Contact us</h3>
+                <p class="footer__content">Lorem Ipsum available, but the majorit</p>
+                <form class="footer__form">
+                    <input type="text" class="footer__input">
+                    <button type="submit" class="footer__button"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <a href="https://www.instagram.com/" class="footer__social-link" target="_blank"><i class="fab fa-instagram footer__icon"></i></a>
+                <a href="https://www.facebook.com/" class="footer__social-link" target="_blank"><i class="fab fa-facebook-f footer__icon"></i></a>
+                <a href="https://www.twitter.com/" class="footer__social-link" target="_blank"><i class="fab fa-twitter footer__icon"></i></a>
+                <a href="https://www.whatsapp.com/" class="footer__social-link" target="_blank"><i class="fab fa-whatsapp footer__icon"></i></a>
+            </article>
+        </div>
+    </footer>
+    <button class="scroll-to-top-btn" title="to-top"><i class="fas fa-angle-up"></i></button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.counter {
+    padding: 160px 0;
+    background: linear-gradient(rgba(252, 195, 2, 0.8), rgba(252, 195, 2, 0.8)) ,url(../img/counter-bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: $white;
+    @include mobile-and-tablet {
+        padding: 0 0 70px;
+    }
+    .wrapper {
+        @include flex(space-between, center);
+    }
+    &__col {
+        flex: 0 0 30%;
+        @include mobile-and-tablet {
+            flex: 0 0 100%;
+            margin-top: 70px;
+        }
+    }
+    &__heading4 {
+        font-size: 42px;
+        font-weight: 500;
+        margin: 60px 0 30px;
+        @include mobile {
+           font-size: 35px;
+           margin: 30px 0;
+        }
+    }
+    &__heading3 {
+        font-size: 37px;
+        font-weight: bold;
+        @include mobile {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+    }
+}

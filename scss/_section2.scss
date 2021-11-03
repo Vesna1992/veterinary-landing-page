@@ -1,0 +1,59 @@
+.section2 {
+    padding: 140px 0;
+    @include mobile {
+        padding: 70px 0;
+    }
+    .wrapper {
+        @include flex(space-between, center);  
+    }
+    &__text {
+        flex: 0 0 48%;
+        @include mobile {
+            flex: 0 0 100%;
+        }
+    }
+    &__img-side {
+        flex: 0 0 44%;
+        position: relative;
+        @include mobile {
+            flex: 0 0 90%;
+            margin: 40px auto 0;
+        }
+    }
+    &__img-container {
+        @include flex(center, center); 
+        height: 480px;
+        background: linear-gradient(rgba(218, 172, 0, 0.569), rgba(218, 172, 0, 0.569)),url('../img/section2-img.png');  
+        background-size: cover;   
+        z-index: 1;
+    }
+    &__orange-block {
+        width: 252px;
+        height: 206px;
+        background-color: $yellow;
+        position: absolute;
+        left: -30px;
+        bottom: -30px;
+        z-index: -1;
+        @include mobile {
+            left: -20px;
+            bottom: -20px;
+        }
+    }
+    &__heading {
+        font-size: 50px;
+        font-weight: 600;
+        color: $blue;
+        @include mobile {
+            font-size: 45px;
+        }
+    }
+    &__content {
+        font-size: 29px;
+        color: $blue;
+        margin: 50px 0;
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+}

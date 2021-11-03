@@ -1,0 +1,129 @@
+.footer {
+    background-color: $dark;
+    padding: 150px 0 190px;
+    color: $white;
+    @include mobile-and-tablet {
+        padding: 50px 0;
+    }
+    .wrapper {
+        @include flex(space-between, flex-start);
+    }
+    &__col {
+        flex: 1;
+        &:last-child {
+            flex: 2;
+            text-align: right;
+            @media(min-width: 600px) and (max-width: 1023px) {
+                flex: 0 0 70%;
+                margin-left: 0;
+            }
+            @include mobile-and-tablet {
+                text-align: left;
+            }
+        }
+        @include tablet {
+            flex: 0 0 48%;
+            margin: 50px auto 0;
+        }
+        @include mobile {
+            flex: 0 0 100%;
+            margin-top: 50px;
+        }
+    }
+    &__heading {
+        font-size: 37px;
+        font-weight: 600;
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+    &__list {
+        margin-top: 40px;
+        @include mobile {
+            margin-top: 30px;
+        }
+    }
+    &__item {
+        margin-top: 20px;
+    }
+    &__link {
+        font-size: 25px;
+        color: $white;
+        position: relative;
+        &::after {
+            content: '';
+            background-color: $turquoise;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .2s ease-in;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+    &__social-link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 15px;
+        border: 1px solid transparent;
+        color: $dark;
+        font-size: 20px;
+        &:hover {
+            border: 1px solid darken($turquoise, 10%);
+            color: $turquoise;
+        }
+    }
+    &__content {
+        font-size: 25px;
+        @include mobile {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }
+    &__form {
+        margin: 50px 0;
+        height: 90px;
+        @include flex(space-between, center);
+        @include mobile {
+           height: 50px;
+        }
+    }
+    &__input {
+        flex: 0 0 80%;
+        height: 100%;
+        background-color: $yellow;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        color: $white;
+        font-size: 22px;
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+    &__button {
+        flex: 0 0 20%;
+        height: 100%;
+        background-color: $turquoise;
+        font-size: 32px;
+        &:hover {
+            background-color: darken($turquoise, 10%);
+            font-size: 40px;
+        }
+    }
+}
+

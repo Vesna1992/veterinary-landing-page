@@ -1,0 +1,79 @@
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: $white;
+    transition: $transiton;
+    cursor: pointer;
+}
+
+.btn-turquoise {
+    padding: 14px 30px;
+    border-radius: 7px;
+    background-color: $turquoise;
+    border: 3px solid transparent;
+    &:hover {
+        background-color: $white;
+        color: $turquoise;
+    }
+}
+
+.btn-transparent {
+    padding: 14px 30px;
+    border-radius: 7px;
+    border: 3px solid $white;
+    &:hover {
+        background-color: $turquoise;
+        color: $white;
+        border: 3px solid $turquoise;
+    }
+}
+
+.btn-yellow {
+    padding: 14px 30px;
+    border-radius: 7px;
+    border: 3px solid transparent;
+    background-color: $yellow;
+    &:hover {
+        background-color: transparent;
+        border: 3px solid $yellow;
+        color: $yellow;
+    }
+}
+
+.btn-buy-now {
+    background-color: $turquoise;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px 46px;
+    &:hover {
+        background-color: $white;
+        color: $turquoise;
+    }
+}
+
+.scroll-to-top-btn {
+    background-color: rgb(116, 116, 116);
+    height: 35px;
+    width: 48px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 75px;
+    z-index: 99;
+    opacity: 0;
+    transition: $transiton;
+    &.displayed {
+        opacity: .8;
+    }
+    &:hover i{
+        transform: translateY(-2px);
+    }
+    @include mobile {
+        display: none;
+    }
+}
